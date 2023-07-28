@@ -33,8 +33,13 @@ a:hover{
 .menu-trigger{
     display: none;
 }
-.thumb center {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.41), rgba(0, 0, 0, .41)), url('../img/hero.jpg');;
+.thumb-home center{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.41), rgba(0, 0, 0, .41)), url('../img/hero.jpg');
+}
+.thumb-contact center{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.41), rgba(0, 0, 0, .41)), url('../img/contact.jpg');
+}
+.thumb-home center,.thumb-contact center {
     background-size: 100% 600px;
     background-repeat: no-repeat;
     max-height: 600px;
@@ -43,12 +48,12 @@ a:hover{
     margin-bottom: 20px;
     display: block;
 }
-.thumb center h4{
+.thumb-home center h4, .thumb-contact center h4{
     font-size: 52px;
     font-weight: bold;
     margin-bottom: 10px;
 }
-.thumb center p{
+.thumb-home center p{
     font-size: 18px;
     font-style: italic;
     margin-bottom: 20px;
@@ -58,15 +63,15 @@ button{
     padding: 10px 20px;
     border: 2px solid white;
 }
-.thumb center button:hover{
+.thumb-home center button:hover{
     background-color: white;
 }
-.thumb center button a{
+.thumb-home center button a{
     color:#fff;
     font-size: 18px;
 }
-.thumb center button:hover a,
-.thumb center button:hover a:hover{
+.thumb-home center button:hover a,
+.thumb-home center button:hover a:hover{
     color: black;
 }
 .explore .left-content{
@@ -118,10 +123,13 @@ q{
     margin: 10px;
     max-height: max-content;
 }
-.explore .right-content .top center h4{
+h4{
     font-size: 20px;
 }
-.explore .right-content .top center span{
+h2{
+    font-size: 34px;
+}
+span{
     color: #aaa;
     font-style: italic;
     font-size: 14px;
@@ -133,6 +141,67 @@ q{
 }
 .explore .right-content .top figure img{
     height: 200px;
+}
+.contact-us,.subscribe{
+    display: flex;
+    padding: 50px 0px;
+}
+.contact-us .map,
+.subscribe .info{
+    margin: 20px 0px;
+    margin-left: 80px;
+}
+.subscribe .info{
+    display: flex;
+}
+.subscribe .info div {
+    margin: 0px 20px;
+}
+.subscribe .info li{
+    color: black;
+    font-weight: 700;
+    font-size: 15px;
+    margin: 10px 0px;
+}
+.subscribe .info li span{
+    color: #aaa;
+    font-weight: 100;
+    font-size: 10px;
+}
+.subscribe .container{width:40%;}
+.contact-us .map iframe{
+    width: 600px;
+    height: 400px;
+}
+.contact-us .container,
+.subscribe .container{
+    margin: 20px 0px;
+    margin-left: 80px;
+}
+.contact-us .container form .top,
+.subscribe .container form .top{
+    display: flex;
+    justify-content: space-between;
+}
+.contact-us .container form fieldset,
+.subscribe .container form fieldset{
+    margin: 10px;
+    border: 1px solid #fff;
+}
+.contact-us .container form fieldset > *,
+.subscribe .container form fieldset > *{
+    min-width: 220px;
+    padding: 10px 20px;
+    font-size: 15px;
+    border: 1px solid #646464;
+    border-radius:30px;
+}
+.contact-us .container form fieldset button,
+.subscribe .container form fieldset button{
+    min-width: 30px;
+    color: white;
+    background-color: black;
+    padding: 5px 10px;
 }
 footer, center{
     width: 100%;

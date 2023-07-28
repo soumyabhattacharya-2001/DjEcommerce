@@ -9,3 +9,8 @@ def home(request):
         'title': 'Home',
     }
     return render(request,'index.html',context=title)
+def contact(request):
+    title = {
+        'title': 'Contact',
+    }
+    return render(request,'contact.html',context=title)
