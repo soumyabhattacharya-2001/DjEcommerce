@@ -4,11 +4,13 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>HexaShop</title>
+        <title>HexaShop &ndash; {% block title %}{% endblock %}</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
         <link rel="stylesheet" href="{% static 'css/style.css' %}">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
     </head>
     <body>
         <header>
@@ -18,7 +20,7 @@
             </a>
             <ul>
               <li>
-                <a href="{% url 'home' %}" class="active">Home</a>
+                <a href="{% url 'home' %}">Home</a>
               </li>
               <li>
                 <a href="javascript:void(0);">Categories</a>
@@ -27,7 +29,16 @@
                 <a href="javascript:void(0);">Shop</a>
               </li>
               <li>
-                <a href="#explore">Contact</a>
+                <a href="javascript:void(0);">Brands</a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">Contact</a>
+              </li>
+              <li>
+                <a href="javascript:void(0);"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                <a href="javascript:void(0);"><i class="fa fa-user" aria-hidden="true"></i></a>
               </li>
             </ul>
             <a class="menu-trigger"><span>Menu</span></a>
@@ -55,7 +66,7 @@
               </ul>
             </div>
             <div>
-              <h4>Useful Links</h4>
+              <h4>Brands</h4>
               <ul>
                 <li><a href="#">Homepage</a></li>
                 <li><a href="#">About Us</a></li>
