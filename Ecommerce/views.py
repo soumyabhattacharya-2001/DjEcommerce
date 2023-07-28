@@ -4,3 +4,6 @@ from django.contrib.auth import authenticate
 from django.conf import settings
 import json
 import os
+
+def home(request):
+    return render(request,'index.html')

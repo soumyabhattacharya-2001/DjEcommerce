@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>HexaShop</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+    <body>
+        <header>
+          <nav>
+            <a href="{% url 'home' %}" class="logo">
+              <img src="{% static 'img/logo.png' %}" alt="website template image">
+            </a>
+            <ul>
+              <li>
+                <a href="{% url 'home' %}" class="active">Home</a>
+              </li>
+              <li>
+                <a href="#">Men's</a>
+              </li>
+              <li>
+                <a href="#">Women's</a>
+              </li>
+              <li>
+                <a href="#">Kid's</a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">Pages</a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">Categories</a>
+              </li>
+              <li>
+                <a href="#explore">Explore</a>
+              </li>
+            </ul>
+            <a class="menu-trigger"><span>Menu</span></a>
+          </nav>
+        </header>
+          {% block content %}
+            
+          {% endblock %}
+    </body>
+</html>
